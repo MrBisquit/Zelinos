@@ -1,6 +1,6 @@
 import { getActiveTab, setActiveTab } from "./localstorage";
 import { CurrentTab, Settings } from "./types";
-import { generateString } from "./utils";
+import { generateString, runAll } from "./utils";
 
 let currentTab: CurrentTab = {}
 let settings: Settings = {}
@@ -8,6 +8,12 @@ let settings: Settings = {}
 const Initialise = (settings: Settings): void => {
     currentTab.id = generateString(8); // 16?
     setActiveTab();
+
+    setInterval(() => {
+        if(!IsActiveTab()) {
+            runAll(currentTab.id, settings.actions?.newTab || []);
+        }
+    }, 500);
 }
 
 const IsActiveTab = (): boolean => getActiveTab() == currentTab.id;
