@@ -1,0 +1,15 @@
+{
+  "name": "zelinos",
+  "version": "1.0.0",
+  "description": "\"Zelida means page or tab if you're creative. Koinos means \"shared\" or \"public\" as in you have a shared conenction between tabs. Zelida + Kionos, maybe Zelinos?\" - Gowner Jones (@gownerjones on Discord)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
+  }
+}
