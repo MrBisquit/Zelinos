@@ -1,8 +1,8 @@
 {
-  "name": "react",
+  "name": "zelinos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The React module for Zelinos, Browser tab communication.",
+  "main": "Zelinos.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
