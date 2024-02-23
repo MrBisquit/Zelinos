@@ -8,3 +8,7 @@ export type Settings = {
         newTab?: ((activeTab: string) => void)[] | [],
     }
 }
+
+export const events = {
+    
+}
